@@ -1,0 +1,114 @@
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  .main-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1b1b1b;
+    color: #fff;
+    padding: 5px 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+
+    .logo {
+      font-size: 0.75rem;
+      font-weight: bold;
+      margin-left: 20px;
+    }
+
+    .auth-buttons {
+      margin-right: 20px;
+      display: flex;
+      gap: 10px;
+
+      .login-button,
+      .signup-button,
+      .logout-button {
+        background: #0078d4;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 0.75rem;
+        border-radius: 4px;
+      }
+
+      .login-button:hover,
+      .signup-button:hover,
+      .logout-button:hover {
+        background: #005a9e;
+      }
+
+      .username {
+        font-size: 1rem;
+        color: #fff;
+        align-self: center;
+      }
+    }
+  }
+
+  .body-content {
+    display: flex;
+    flex: 1;
+  }
+
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    background: #333;
+    color: white;
+    padding: 10px;
+    transition: width 0.3s;
+    overflow: hidden;
+
+    &.open {
+      width: 200px;
+    }
+
+    &.closed {
+      width: 50px;
+    }
+
+    .toggle-button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+      align-self: flex-end;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      button {
+        background: none;
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        cursor: pointer;
+        font-size: 1rem;
+        width: 100%;
+      }
+
+      button:hover {
+        background: #444;
+      }
+    }
+  }
+
+  .main-content {
+    flex: 1;
+    padding: 10px;
+    background-color: #343a40;
+  }
+}

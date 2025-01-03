@@ -1,0 +1,55 @@
+.container {
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow-y: hidden;
+  transition: background 0.3s;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  .container-header {
+    background: rgba(200, 200, 200, 0.8);
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin-bottom: 10px;
+    border-radius: 4px;
+
+    &:hover {
+      background: rgba(180, 180, 180, 0.8);
+    }
+  }
+
+  .elements {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+
+    &.open {
+      max-height: 400px;
+    }
+
+    &.closed {
+      max-height: 0;
+    }
+
+    .element {
+      background: rgba(200, 200, 200, 0.8);
+      color: #333;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      cursor: grab;
+      text-align: center;
+
+      &:hover {
+        background: rgba(180, 180, 180, 0.8);
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.main-layout {
+    display: flex;
+  }
+  
+  .activity-bar {
+    width: 50px;
+    background: #333;
+    color: white;
+  }
+  
+  .container-view {
+    width: 200px;
+    background: #f0f0f0;
+  }
+  
+  .canvas-view {
+    flex: 1;
+    background: #fff;
+  }
+  
+  .properties-sidebar {
+    width: 200px;
+    background: #f8f8f8;
+  }
+  
