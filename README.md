@@ -4,6 +4,8 @@ This project is a web application where users can register, create new canvases,
 
 ![Alt Text](client/public/assets/images/1.JPG)
 
+<img src="client/public/assets/images/1.JPG" alt="Canvas Management Screenshot" width="500"/>
+
 ## Technologies Used
 
 ### Backend
