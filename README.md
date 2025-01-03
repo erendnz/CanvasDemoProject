@@ -2,9 +2,8 @@
 
 This project is a web application where users can register, create new canvases, and add or manage elements on these canvases. Users can perform various actions with the elements directly on the canvas. The project is built with a layered architecture and leverages modern technologies for both the backend and frontend.
 
-![Alt Text](client/public/assets/images/1.JPG)
-
 <img src="client/public/assets/images/1.JPG" alt="Canvas Management Screenshot" width="500"/>
+<img src="client/public/assets/images/2.JPG" alt="Canvas Management Screenshot" width="500"/>
 
 ## Technologies Used
 
